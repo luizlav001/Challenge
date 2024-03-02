@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/styles/estilo.css">
 </head>
+
 <body>
+    <header class="cabecalho">
+        <img class="logo__alura" src="img/Frame 6logo alura.png" alt="Logo alura">
+    </header>
     <main class="decodificador">
         <section class="decodificador__esquerdo">
-            <img class="logo__alura" src="img/Frame 6logo alura.png" alt="Logo alura">
-            <form class="caixa__texto__principal">
-                <textarea id="texto-principal" type="text" placeholder="Digite seu texto"></textarea>
-            </form>
+            <textarea class="texto__principal" type="text" placeholder="Digite seu texto"></textarea>
+            <div class="decodificador__esquerdo__conteudo">
+                <img src="img/bi_exclamation-circle-fill!.png" alt="Sinal de exclamação">
+                <h6>apenas letras minúsculas e sem acento<h6>
+            </div>
             <div class="botoes">
-                <button class="botoes__cripto" type="button">Criptografar</button>
-                <button class="botoes__descripto" type="button">Descriptografar</button>
+                <button class="botoes__cripto" onclick="btn_cripto()">Criptografar</button>
+                <button class="botoes__descripto" onclick="btn_descripto()">Descriptografar</button>
             </div>
         </section>
+
         <section class="decodificador__direito">
+            <textarea class="mensagem"></textarea>
             <div class=" decodificador__direito__conteudo">
                 <img src="img/High quality products 1 1.png" alt="Procurando algo com a lupa">
                 <h2 class="decodificador__direito__titulo">Nenhuma mensagem encontrada</h2>
-                <p class="decodificador__direito__subtitulo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <p class="decodificador__direito__subtitulo">Digite um texto que você deseja criptografar ou
+                    descriptografar.</p>
             </div>
+            <button class="decodificador__direito__copiar" onclick="btn_copiar()">Copiar</button>
         </section>
     </main>
-    <footer>
-        <p>Desenvolvido por Luiz Lincoln</p>
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Luiz Lincoln</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
