@@ -39,7 +39,7 @@ function btn_descripto() {
 
 function btn_copiar() {
     navigator.clipboard.writeText(textoSaida.innerHTML)
-     textoEntrada.value = "";
+    textoEntrada.value = "";
     alert('Copiado com sucesso!')
     document.body.removeChild(textoSaida);
 }

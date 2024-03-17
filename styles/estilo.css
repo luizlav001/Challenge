@@ -1,33 +1,21 @@
-:root{
+:root {
     --dark-blue-100: #609ED4;
-    --dark-blue-200: #356EA9;
     --dark-blue-300: #0A3871;
-    --dark-blue-400: #072B61;
     --dark-blue-500: #052051;
 
-    --light-blue-100: #F3F5FC;
-    --light-blue-200: #EFF1FA;
-    --light-blue-300: #E9ECF8;
-    --light-blue-400: #AAB2D5;
-    --light-blue-500: #757FB2;
-
     --gray-100: #CED4DA;
-    --gray-200: #ADB5BD;
-    --gray-300: #868E96;
-    --gray-400: #485057;
-    --gray-500: #343A40;
 
     --white-100: #FFFFFF
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body{
+body {
     background-color: var(--light-blue-100);
     font-weight: 400;
     box-sizing: border-box;
@@ -35,11 +23,11 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-.cabecalho{
+.cabecalho {
     padding: 2%;
 }
 
-.decodificador{
+.decodificador {
     height: 100vh;
     max-height: 100vh;
     display: flex;
@@ -49,21 +37,21 @@ body{
     padding: 0 30px;
 }
 
-.logo__alura:hover{
+.logo__alura:hover {
     height: 48px;
     margin-right: 100px;
     transform: scale(1.2);
     transition-duration: 0.5s;
 }
 
-.decodificador__esquerdo{
+.decodificador__esquerdo {
     width: 60%;
     height: 100%;
     padding-top: 40px;
     gap: 16px;
 }
 
-textarea{
+textarea {
     height: 400px;
     resize: none;
     border: 0px none;
@@ -72,22 +60,22 @@ textarea{
     color: var(--dark-blue-500);
 }
 
-.decodificador__esquerdo__conteudo{
+.decodificador__esquerdo__conteudo {
     display: flex;
     outline: none;
     gap: 5px;
 }
 
-.caixa__texto__principal{
+.caixa__texto__principal {
     padding-top: 60px;
     padding-left: 110px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    
+
 }
 
-.texto__principal{
+.texto__principal {
     width: 100%;
     border: none;
     font-family: "Inter", sans-serif;
@@ -100,21 +88,21 @@ textarea{
     background-color: transparent;
 }
 
-.texto-principal::placeholder{
+.texto-principal::placeholder {
     color: var(--dark-blue-300);
 }
 
-.botoes{
+.botoes {
     display: flex;
     justify-content: space-between;
-    margin-top: 8.75rem; 
+    margin-top: 8.75rem;
     margin-right: 12.5rem;
     margin-left: 3.12rem;
     gap: 24px;
-   
+
 }
-   
-.botoes__cripto{
+
+.botoes__cripto {
     padding: 24px;
     width: 50%;
     background-color: var(--dark-blue-300);
@@ -124,15 +112,15 @@ textarea{
     font-size: 1rem;
     border-style: none;
     cursor: pointer;
-   
+
 }
 
-.botoes__cripto:hover{
+.botoes__cripto:hover {
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
 
-.botoes__descripto{
+.botoes__descripto {
     padding: 24px;
     width: 50%;
     background-color: var(--gray-100);
@@ -144,12 +132,12 @@ textarea{
     cursor: pointer;
 }
 
-.botoes__descripto:hover{
+.botoes__descripto:hover {
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
 
-.decodificador__direito{
+.decodificador__direito {
     width: 40%;
     background-color: var(--white-100);
     box-shadow: 0px 24px 32px -8px #00000014;
@@ -163,7 +151,7 @@ textarea{
     justify-content: space-between;
 }
 
-.decodificador__direito__conteudo{
+.decodificador__direito__conteudo {
     text-align: center;
     align-items: center;
     display: flex;
@@ -171,7 +159,7 @@ textarea{
     gap: 16px;
 }
 
-.decodificador__direito__copiar{
+.decodificador__direito__copiar {
     padding: 24px;
     border-radius: 24px;
     background-color: var(--white-100);
@@ -183,116 +171,116 @@ textarea{
     cursor: pointer;
 }
 
-.decodificador__direito__copiar:hover{
+.decodificador__direito__copiar:hover {
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
 
-.rodape{
+.rodape {
     text-align: center;
     background-color: var(--dark-blue-100);
     padding: 16px;
     color: var(--dark-blue-500);
     font-family: "Inter", sans-serif;
     font-size: 200;
-    
+
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 768px) {
 
-    body{
+    body {
         flex-direction: column;
         padding: 2% 0% 0% 1%;
-     }
+    }
 
-    .decodificador{
+    .decodificador {
         flex-direction: column;
     }
 
-    .decodificador__direito{
+    .decodificador__direito {
         width: 688px;
         height: 133px;
         box-shadow: 5px 5px 5px 5px var(--dark-blue-500);
     }
 
-    .decodificador__direito__copiar{
+    .decodificador__direito__copiar {
         padding: 1rem;
-        width: 200px 
+        width: 200px
     }
 
-    .decodificador__direito__conteudo__img{
+    .decodificador__direito__conteudo__img {
         display: none;
     }
 }
 
-@media(max-width: 425px){ 
-   
-    .decodificador{
+@media(max-width: 425px) {
+
+    .decodificador {
         flex-direction: column;
     }
 
-    .decodificador__esquerdo{
+    .decodificador__esquerdo {
         max-width: 100%;
-        word-wrap: break-word; 
-        text-align: center; 
+        word-wrap: break-word;
+        text-align: center;
         margin-top: 20px
     }
 
-    .texto__principal{
+    .texto__principal {
         width: calc(100% - 40px);
-        margin-right: 0; 
-        height: 200px; 
-       text-align: center;
+        margin-right: 0;
+        height: 200px;
+        text-align: center;
     }
 
-    .decodificador__esquerdo__conteudo__exclamacao{
+    .decodificador__esquerdo__conteudo__exclamacao {
         justify-content: center;
     }
 
-    botoes{
+    botoes {
         flex-direction: column;
         align-items: center;
     }
 
-    .decodificador__direito{
+    .decodificador__direito {
         width: 327px;
         height: 186px;
         box-shadow: 5px 5px 5px 5px var(--dark-blue-500);
     }
 
-    .rodape{
+    .rodape {
         padding: 1rem;
     }
 
 }
 
-@media(max-width: 320px){
+@media(max-width: 320px) {
 
-    .decodificador{
+    .decodificador {
         flex-direction: column;
         align-items: center;
-        padding: 0 10px; 
+        padding: 0 10px;
     }
 
-    .decodificador__esquerdo{
+    .decodificador__esquerdo {
         max-width: 100%;
-        word-wrap: break-word; 
-        text-align: center; 
-        margin-top: 20px; 
+        word-wrap: break-word;
+        text-align: center;
+        margin-top: 20px;
     }
 
-    .decodificador__esquerdo__conteudo__exclamacao{
+    .decodificador__esquerdo__conteudo__exclamacao {
         margin-bottom: 10px;
     }
 
-    .botoes{
+    .botoes {
         margin-bottom: 20px;
         margin-left: 20px;
     }
 
-    .decodificador__direito{
-        width: calc(100% - 60px); 
+    .decodificador__direito {
+        width: calc(100% - 60px);
         height: 186px;
-        margin: 20px; 
+        margin: 20px;
     }
 }
