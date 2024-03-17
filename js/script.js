@@ -27,18 +27,19 @@ function descriptografar(texto) {
 
 function btn_cripto() {
     let textinhoFinal = criptografar(textoEntrada.value)
-
     textoSaida.innerHTML = textinhoFinal
+    textoEntrada.value = "";
 }
 
 function btn_descripto() {
     let textinhoFinal = descriptografar(textoEntrada.value)
-
     textoSaida.innerHTML = textinhoFinal
+    textoEntrada.value = "";
 }
 
 function btn_copiar() {
     navigator.clipboard.writeText(textoSaida.innerHTML)
+     textoEntrada.value = "";
     alert('Copiado com sucesso!')
-    
+    document.body.removeChild(textoSaida);
 }
